@@ -71,9 +71,9 @@ class ReceiptsIndex extends Component {
 
         const formData = new FormData();
         formData.append('file', image_file);
-        formData.append('upload_preset', 'r2rutyz6');
+        formData.append('upload_preset', 'XXXXX');
 
-        axios.post(`https://api.cloudinary.com/v1_1/dmqtrnawm/image/upload`, formData,)
+        axios.post(`https://api.cloudinary.com/v1_1/XXXXXXX/image/upload`, formData,)
             .then(function(response) {
                 const image = response.data.public_id;
                 currentComponent.setState({image: image});
